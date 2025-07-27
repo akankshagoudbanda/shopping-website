@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Fabric - Lehenga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">New Arrival</a></li>
+                    <li><a href="lehenga.html">Lehenga</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <div class="login-section">
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+    <section class="lehenga-collection">
+        <div class="container">
+            <h2>Lehenga Collection</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/6b/9a/93/6b9a93cc0101d1445017e24d194b3bf0.jpg" alt="Red Lehenga">
+                    <h3>Red Lehenga</h3>
+                    <p>Rs. 3,199</p>
+                    <button onclick="addToCart('Red Lehenga', 3199)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/f5/d6/10/f5d610f59b23512c5942b0378c98339a.jpg" alt=" Lehenga Choli In Sequence Work">
+                    <h3> Lehenga Choli In Sequence Work</h3>
+                    <p>Rs. 5,999</p>
+                    <button onclick="addToCart(' Lehenga Choli In Sequence Work', 5999)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/e6/37/0e/e6370e0ca2006b210f65d33ae703870a.jpg" alt="Powder blue Mirror work lehenga">
+                    <h3>Powder blue Mirror work lehenga</h3>
+                    <p>Rs. 4,199</p>
+                    <button onclick="addToCart('Powder blue Mirror work lehenga', 4199)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/a9/4f/01/a94f018263a438c9a4bdb3be388d9c4f.jpg" alt="Mehendi Green desginer Lehenga">
+                    <h3>Mehendi Green desginer Lehenga</h3>
+                    <p>Rs. 4,499</p>
+                    <button onclick="addToCart('Mehendi Green desginer Lehenga', 4499)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/f4/78/91/f478917f072d072e7d3d5196e56239ae.jpg" alt="Lavender Shaded Lehenga">
+                    <h3>Lavender Shaded Lehenga</h3>
+                    <p>Rs. 3,699</p>
+                    <button onclick="addToCart('Lavender Shaded Lehenga', 3699)">Add to Cart</button>
+                </div> 
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/60/3e/64/603e64c10bce4ad81a27a5d94212651d.jpg" alt="Pink Lehenga">
+                    <h3>Pink Lehenga</h3>
+                    <p>Rs. 2,999</p>
+                    <button onclick="addToCart('Pink Lehenga', 2999)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="index.html">
+                <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+            </a>
+                <p>A To go store for Fabrics </p>
+                <div class="subscribe">
+                    <label for="subscribe-email">Subscribe Now</label>
+                    <input type="email" id="subscribe-email" placeholder="Enter your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">More Search</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Helpful Links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Brands List</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Fashion List</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9012345678</p>
+                <p><i class="fas fa-envelope"></i> support@svfabric.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SV Fabric. All rights reserved.</p>
+            <div>
+                <a href="#">FAQ</a> | 
+                <a href="#">Privacy</a> | 
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

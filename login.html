@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Fabric - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login-container">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form action="dashboard.html" method="post">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+                <button type="submit" class="submit-btn">Login</button>
+                <p class="signup-prompt">
+                    Don't have an account? <a href="signup.html">Sign up</a>
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        const loginForm = document.getElementById("login-form");
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Logged in successfully!");
+            window.location.href = "index.html";
+        });
+    </script>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+                <p>A To go store for Fabrics </p>
+                <div class="subscribe">
+                    <label for="subscribe-email">Subscribe Now</label>
+                    <input type="email" id="subscribe-email" placeholder="Enter your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">More Search</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Helpful Links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Brands List</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Fashion List</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9012345678</p>
+                <p><i class="fas fa-envelope"></i> support@svfabric.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SV Fabric. All rights reserved.</p>
+            <div>
+                <a href="#">FAQ</a> | 
+                <a href="#">Privacy</a> | 
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

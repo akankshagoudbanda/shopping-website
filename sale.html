@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Fabric - Sale</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">New Arrival</a></li>
+                    <li><a href="lehenga.html">Lehenga</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <div class="login-section">
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sale Section -->
+    <section class="sale-collection">
+        <div class="container">
+            <h2>Exclusive Sale</h2>
+            <p>Grab the best deals on your favorite outfits!</p>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/99/fa/7f/99fa7fae2e28bb1837e335503d314ab0.jpg" alt="Sale Product 1">
+                    <h3>Velvet Designer Lehenga</h3>
+                    <p>Rs. <s>5,999</s> <strong>4,499</strong></p>
+                    <button onclick="addToCart('Velvet Designer Lehenga', 4499)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/ee/0e/c4/ee0ec4839007bbf4eaafc5503f3e19b4.jpg" alt="Sale Product 2">
+                    <h3>Silk Saree with Sequins</h3>
+                    <p>Rs. <s>4,499</s> <strong>3,799</strong></p>
+                    <button onclick="addToCart('Silk Saree with Sequins', 3799)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="https://i.pinimg.com/736x/a1/e8/31/a1e8312e333712736a5f30431d1682b5.jpg" alt="Sale Product 3">
+                    <h3>Thread Work Lehenga</h3>
+                    <p>Rs. <s>6,999</s> <strong>5,299</strong></p>
+                    <button onclick="addToCart('Thread Work Lehenga', 5299)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+                <p>A To go store for Fabrics </p>
+                <div class="subscribe">
+                    <label for="subscribe-email">Subscribe Now</label>
+                    <input type="email" id="subscribe-email" placeholder="Enter your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">More Search</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Helpful Links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Brands List</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Fashion List</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9012345678</p>
+                <p><i class="fas fa-envelope"></i> support@svfabric.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SV Fabric. All rights reserved.</p>
+            <div>
+                <a href="#">FAQ</a> | 
+                <a href="#">Privacy</a> | 
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

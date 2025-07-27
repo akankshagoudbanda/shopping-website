@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SV Fabric - Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">New Arrival</a></li>
+                    <li><a href="lehenga.html">Lehenga</a></li>
+                    <li><a href="trending.html">Trending</a></li>
+                    <li><a href="sale.html">Sale</a></li>
+                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="cart.html" id="cart-btn">Cart (<span id="cart-count">0</span>)</a></li>
+                </ul>
+            </nav>
+            <div class="login-section">
+                <a href="login.html" class="login-btn">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cart Section -->
+    <section class="cart-page">
+        <div class="container">
+            <h2>Your Cart</h2>
+            <div id="cart-container"></div>
+            <p><strong>Total: Rs. <span id="total-price">0</span></strong></p>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <h2>Checkout</h2>
+            <form id="checkout-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="address">Shipping Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your shipping address" required></textarea>
+
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit/Debit Card</option>
+                    <option value="cod">Cash on Delivery</option>
+                    <option value="upi">UPI</option>
+                </select>
+
+                <div id="card-details" class="hidden">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number">
+                    
+                    <label for="expiry">Expiry Date:</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+                    
+                    <label for="cvv">CVV:</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="CVV">
+                </div>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <a href="index.html">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1769951162/display_1500/stock-vector-sv-or-vs-logo-design-vector-illustration-1769951162.jpg" alt="SV Fabric Logo">
+                </a>
+                <p>A To go store for Fabrics </p>
+                <div class="subscribe">
+                    <label for="subscribe-email">Subscribe Now</label>
+                    <input type="email" id="subscribe-email" placeholder="Enter your Email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">More Search</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Helpful Links</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Supports</a></li>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Brands List</a></li>
+                    <li><a href="#">Order</a></li>
+                    <li><a href="#">Return & Exchange</a></li>
+                    <li><a href="#">Fashion List</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-phone"></i> +91 9012345678</p>
+                <p><i class="fas fa-envelope"></i> support@svfabric.com</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-google"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SV Fabric. All rights reserved.</p>
+            <div>
+                <a href="#">FAQ</a> | 
+                <a href="#">Privacy</a> | 
+                <a href="#">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        renderCart();
+
+        // Toggle Credit/Debit Card fields based on payment method selection
+        const paymentMethod = document.getElementById("payment-method");
+        const cardDetails = document.getElementById("card-details");
+
+        paymentMethod.addEventListener("change", () => {
+            if (paymentMethod.value === "credit-card") {
+                cardDetails.classList.remove("hidden");
+            } else {
+                cardDetails.classList.add("hidden");
+            }
+        });
+
+        // Handle checkout form submission
+        const checkoutForm = document.getElementById("checkout-form");
+        checkoutForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+            alert("Your order has been placed successfully!");
+            localStorage.removeItem("cart"); // Clear the cart
+            window.location.href = "index.html"; // Redirect to home page
+        });
+    </script>
+</body>
+</html>
